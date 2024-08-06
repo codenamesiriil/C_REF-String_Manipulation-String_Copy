@@ -8,11 +8,12 @@ The `cns_strcpy`, `cns_strncpy`, and `cns_strlcpy` functions are simple implemen
 char *cns_strcpy(char *dst, const char *src);
 ```
 
-[strcpy(3) — Linux manual page](https://www.man7.org/linux/man-pages/man3/strcpy.3.html)
-
 The `cns_strcpy` function copies the `src` string to the `dst` string, including the termination character, provided that the destination string is big enough to accommodate the entirety of the source string. It's up to the developer to ensure that `dst` has enough length to allow for the complete copy of `src`.
 
 If `dst` is not big enough, the behavior is undefined, which may lead to buffer overflows and potential security vulnerabilities.
+
+> For more information about the GNU C Standard Library implementation of `strcpy`, visit the [strcpy(3) — Linux manual page](https://www.man7.org/linux/man-pages/man3/strcpy.3.html).
+
 
 ## cns_strncpy
 
