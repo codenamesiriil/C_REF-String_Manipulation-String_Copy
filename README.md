@@ -34,11 +34,11 @@ The `cns_strlcpy` function copies up to ***[size_t](https://github.com/codenames
 
 ## Additional Protections
 
-To enhance the robustness of these functions, it is recommended to check if *src* and *dst* are not *NULL* before performing the copy operation. This can help prevent undefined behavior from dereferencing *NULL* pointers.
+To enhance the robustness of these functions, it is recommended to check if *src* and *dst* are not *null* before performing the copy operation. This can help prevent undefined behavior from dereferencing *null* pointers.
 
 ```c
 if (!dst || !src)
     return (NULL);
 ```
 
-**Note:** Checking for *NULL* adds additional overhead and may impact performance. Use this approach based on your application's needs.
+**Note:** Checking for *null* adds additional overhead and may impact performance. Use this approach based on your application's needs.
