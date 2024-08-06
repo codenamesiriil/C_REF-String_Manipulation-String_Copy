@@ -1,6 +1,6 @@
 # String Copy
 
-The `cns_strcpy`, `cns_strncpy`, and `cns_strlcpy` functions are simple implementations of the GNU C Standard Library functions, respectively `strcpy`, `strncpy`, and `strlcpy`, found under the header `<string.h>`.
+The `cns_strcpy`, `cns_strncpy`, and `cns_strlcpy` functions are simple implementations of the GNU C Standard Library functions, respectively `strcpy`, `strncpy`, and `strlcpy`, found under the header `<string.h>` and `<bsd/string.h>`.
 
 ## cns_strcpy
 
