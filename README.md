@@ -8,9 +8,7 @@ The `cns_strcpy`, `cns_strncpy`, and `cns_strlcpy` functions are simple implemen
 char *cns_strcpy(char *dst, const char *src);
 ```
 
-<div style="text-align: right;">
-<a href="https://www.man7.org/linux/man-pages/man3/strcpy.3.html" target="_blank">strcpy(3) — Linux manual page</a>
-</div>
+[strcpy(3) — Linux manual page](https://www.man7.org/linux/man-pages/man3/strcpy.3.html)
 
 The `cns_strcpy` function copies the `src` string to the `dst` string, including the termination character, provided that the destination string is big enough to accommodate the entirety of the source string. It's up to the developer to ensure that `dst` has enough length to allow for the complete copy of `src`.
 
