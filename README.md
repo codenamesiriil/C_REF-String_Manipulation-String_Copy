@@ -28,7 +28,7 @@ The `cns_strncpy` function is similar to `cns_strcpy` but allows specifying the 
 size_t *cns_strlcpy(char *dst, const char *src, size_t len);
 ```
 
-The `cns_strlcpy` function copies up to [*size_t*](https://github.com/codenamesiriil/C_REF-Wiki/wiki/size_t) *len-1* characters from the *src* string to the *dst* string, and null-terminates the result. It ensures that the destination string is null-terminated, which helps avoid buffer overflows and truncation issues. The function returns the total length of the string it tried to create, which means the length of *src*. This can be used to detect truncation by comparing the returned length with the size of the destination buffer.
+The `cns_strlcpy` function copies up to ***[size_t](https://github.com/codenamesiriil/C_REF-Wiki/wiki/size_t)*** *len-1* characters from the *src* string to the *dst* string, and null-terminates the result. It ensures that the destination string is null-terminated, which helps avoid buffer overflows and truncation issues. The function returns the total length of the string it tried to create, which means the length of *src*. This can be used to detect truncation by comparing the returned length with the size of the destination buffer.
 
 > For more information about the GNU C Standard Library implementation of `strlcpy`, visit the [strlcpy(3) - Linux manual page](https://linux.die.net/man/3/strlcpy).
 
