@@ -18,7 +18,7 @@ The `cns_strcpy` function copies the *src* string to the *dst* string, including
 char *cns_strncpy(char *dst, const char *src, size_t n);
 ```
 
-The `cns_strncpy` function is similar to `cns_strcpy` but allows specifying the maximum number of characters to copy from the *src* string. This can help prevent buffer overflows by limiting the number of characters copied to the destination string. However, it's important to note that if *src* is shorter than [*size_t*](https://github.com/codenamesiriil/C_REF-Wiki/wiki/size_t) *n*, the remainder of *dst* will be padded with null bytes. If, on the other hand, *src* is larger than [*size_t*](https://github.com/codenamesiriil/C_REF-Wiki/wiki/size_t) *n*, the copied string will not be null-terminated.
+The `cns_strncpy` function is similar to `cns_strcpy` but allows specifying the maximum number of characters to copy from the *src* string. This can help prevent buffer overflows by limiting the number of characters copied to the destination string. However, it's important to note that if *src* is shorter than ***[size_t](https://github.com/codenamesiriil/C_REF-Wiki/wiki/size_t)*** *n*, the remainder of *dst* will be padded with null bytes. If, on the other hand, *src* is larger than ***[size_t](https://github.com/codenamesiriil/C_REF-Wiki/wiki/size_t)*** *n*, the copied string will not be null-terminated.
 
 > For more information about the GNU C Standard Library implementation of `strncpy`, visit the [stpncpy(3) — Linux manual page](https://www.man7.org/linux/man-pages/man3/strncpy.3.html).
 
