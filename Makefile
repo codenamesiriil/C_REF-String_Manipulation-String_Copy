@@ -1,22 +1,21 @@
 NAME = cns_str_cpy
 CC = gcc
-FlAGS = -Werror -Wextra -Wall
+FLAGS = -Werror -Wextra -Wall -I./inc
 RM = del /Q
 
 SOURCE = cns_strcpy.c \
-	cns_strncpy.c \
-	cns_strlcpy.c \
-	main.c
+         cns_strncpy.c \
+         cns_strlcpy.c \
+         main.c
 
 OBJS = $(SOURCE:.c=.o)
-DEPS = cns_str_cpy.h
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
 	$(CC) $(FLAGS) -o $@ $(OBJS)
 
-%.o: %.c $(DEPS)
+%.o: %.c
 	$(CC) $(FLAGS) -c $< -o $@
 
 clean:
