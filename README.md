@@ -32,6 +32,12 @@ The `cns_strlcpy` function copies up to ***[size_t](https://github.com/codenames
 
 > For more information about the GNU C Standard Library implementation of `strlcpy`, visit the [strlcpy(3) - Linux manual page](https://linux.die.net/man/3/strlcpy).
 
+## cns_strdup
+
+```c
+char *cns_strdup(const char *s);
+```
+
 ## Additional Protections
 
 To enhance the robustness of these functions, it is recommended to check if *src* and *dst* are not *null* before performing the copy operation. This can help prevent undefined behavior from dereferencing *null* pointers.
