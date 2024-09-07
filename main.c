@@ -28,6 +28,16 @@ int main(void)
 		out = cns_strlcpy(dst, src, 5);
 		printf("\ncns_strlcpy\n");
 		printf("out : %d | dst : %s\n", out, dst);
-	}   
+	}
+	{
+		char	src[] = "Hello World";
+		char	*out;
+
+		out = cns_strdup(src);
+		printf("\ncns_strdup\n");
+		printf("src : %s | out : %s\n", src, out);
+		
+		free(out);
+	} 
 	return (0);
 }

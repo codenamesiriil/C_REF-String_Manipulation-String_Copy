@@ -3,9 +3,10 @@ CC = gcc
 FLAGS = -Werror -Wextra -Wall -I./inc
 RM = del /Q
 
-SOURCE = cns_strcpy.c \
+SOURCE = cns_strcpy.c  \
          cns_strncpy.c \
          cns_strlcpy.c \
+		 cns_strdup.c  \
          main.c
 
 OBJS = $(SOURCE:.c=.o)

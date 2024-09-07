@@ -1,5 +1,4 @@
-#include <stdlib.h>
-#include <stdio.h>
+#include "cns_str_cpy.h"
 
 static size_t	cns_strlen(const char *s)
 {
